@@ -189,7 +189,7 @@ Módulo encargado de actualizaciones en tiempo real.
 # 📂 Estructura del proyecto
 
 ```bash
-VehicleRentalSystem/
+PlataformaRentaVehiculosTiempoReal/
 │
 ├── app/                         # Lógica principal
 ├── tests/                       # Testing y WebSocket tests
@@ -221,7 +221,7 @@ VehicleRentalSystem/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/isairey/vehicle-rental-system.git
+git clone https://github.com/isairey/PlataformaRentaVehiculosTiempoReal.git
 ```
 
 ---
@@ -229,7 +229,7 @@ git clone https://github.com/isairey/vehicle-rental-system.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd vehicle-rental-system
+cd PlataformaRentaVehiculosTiempoReal
 ```
 
 ---
