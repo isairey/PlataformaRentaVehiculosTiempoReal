@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "RNT001",
+        "vehicle_id": "VEH002",
+        "customer_id": "USR001",
+        "rental_start_date": "2024-03-15T10:00:00",
+        "rental_end_date": "2024-03-18T10:00:00",
+        "total_cost": 225.00
+    },
+    {
+        "_id": "RNT002",
+        "vehicle_id": "VEH001",
+        "customer_id": "USR003",
+        "rental_start_date": "2024-03-16T14:00:00",
+        "rental_end_date": "2024-03-17T14:00:00",
+        "total_cost": 50.00
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "BR001",
+        "name": "Downtown Branch",
+        "location": "123 Main Street, Downtown",
+        "contact_number": "+1-555-0123"
+    },
+    {
+        "_id": "BR002",
+        "name": "Airport Branch",
+        "location": "456 Airport Road",
+        "contact_number": "+1-555-0124"
+    },
+    {
+        "_id": "BR003",
+        "name": "Suburban Branch",
+        "location": "789 Oak Avenue, Suburbs",
+        "contact_number": "+1-555-0125"
+    }
+]

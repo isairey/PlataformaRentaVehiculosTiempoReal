@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "VEH001",
+        "name": "Toyota Camry",
+        "model": "2022",
+        "vehicle_type": "CAR",
+        "rental_price_per_day": 50.00,
+        "availability_status": "AVAILABLE",
+        "location": "Downtown Branch"
+    },
+    {
+        "_id": "VEH002",
+        "name": "Honda CR-V",
+        "model": "2023",
+        "vehicle_type": "SUV",
+        "rental_price_per_day": 75.00,
+        "availability_status": "RENTED",
+        "location": "Airport Branch"
+    },
+    {
+        "_id": "VEH003",
+        "name": "Harley Davidson Street",
+        "model": "2022",
+        "vehicle_type": "MOTORCYCLE",
+        "rental_price_per_day": 45.00,
+        "availability_status": "MAINTENANCE",
+        "location": "Downtown Branch"
+    }
+]

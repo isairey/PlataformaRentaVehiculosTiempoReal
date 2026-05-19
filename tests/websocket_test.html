@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Test</title>
+</head>
+<body>
+    <h2>WebSocket Test Client</h2>
+    <div>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" value="USR001">
+        <button onclick="connect()">Connect</button>
+        <button onclick="disconnect()">Disconnect</button>
+    </div>
+    <div>
+        <h3>Messages:</h3>
+        <pre id="messages"></pre>
+    </div>
+
+    <script>
+        let ws = null;
+        const messagesDiv = document.getElementById('messages');
+
+        function connect() {
+            const userId = document.getElementById('userId').value;
+            ws = new WebSocket(`ws://localhost:8000/ws/${userId}`);
+
+            ws.onopen = function() {
+                appendMessage('Connected to WebSocket');
+            };
+
+            ws.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                appendMessage('Received: ' + JSON.stringify(data, null, 2));
+            };
+
+            ws.onclose = function() {
+                appendMessage('Disconnected from WebSocket');
+            };
+
+            ws.onerror = function(error) {
+                appendMessage('Error: ' + error.message);
+            };
+        }
+
+        function disconnect() {
+            if (ws) {
+                ws.close();
+                ws = null;
+            }
+        }
+
+        function appendMessage(message) {
+            messagesDiv.innerHTML += message + '\n';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html> 

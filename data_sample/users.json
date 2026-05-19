@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "USR001",
+        "name": "John Doe",
+        "email": "john.doe@email.com",
+        "password": "securepass123",
+        "role": "CUSTOMER"
+    },
+    {
+        "_id": "USR002",
+        "name": "Jane Smith",
+        "email": "jane.smith@email.com",
+        "password": "emppass456",
+        "role": "EMPLOYEE"
+    },
+    {
+        "_id": "USR003",
+        "name": "Bob Wilson",
+        "email": "bob.wilson@email.com",
+        "password": "pass789",
+        "role": "CUSTOMER"
+    }
+]
