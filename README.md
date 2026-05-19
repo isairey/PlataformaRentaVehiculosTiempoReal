@@ -1,135 +1,463 @@
-# Vehicle Rental System 🚗
+<div align="center">
 
-This Vehicle Rental System is a modern FastAPI-based backend service that enables vehicle rental management with real-time updates. It features JWT authentication, role-based access control (customer/employee), and event-driven architecture using Apache Kafka for system events. It uses MongoDB as the database backend. Real-time updates are handled via WebSocket connections, allowing instant notifications for rental requests, approvals, and vehicle status changes.
+<img width="220" src="https://cdn-icons-png.flaticon.com/512/744/744465.png" />
 
-## Demo 🎥
-Check out our demo video to see the system in action:
+# 🚗 Vehicle Rental System
 
+### Plataforma moderna de renta de vehículos en tiempo real ⚡
 
-https://github.com/user-attachments/assets/4bb6f9c1-6ee8-47b9-81a3-737d5f7fcebe
+<p align="center">
+  <b>Vehicle Rental System</b> es una plataforma backend desarrollada con FastAPI para la administración de vehículos, reservas y eventos en tiempo real mediante WebSockets y Apache Kafka.
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img src="https://img.shields.io/badge/ApacheKafka-EventDriven-231F20?style=for-the-badge&logo=apachekafka&logoColor=white">
+  <img src="https://img.shields.io/badge/WebSocket-RealTime-blue?style=for-the-badge">
+</p>
 
+<p align="center">
+  <a href="#-acerca-del-proyecto">Acerca</a> •
+  <a href="#-características">Características</a> •
+  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-vista-previa">Vista previa</a>
+</p>
 
-## Tech Stack 🛠️
+</div>
 
-### Core
-- ⚡️ FastAPI - Web framework
-- 🗄️ MongoDB - Database
-- 📬 Apache Kafka - Event streaming
-- 🔌 WebSocket - Real-time updates
+---
 
-### Key Libraries
-- 🔐 PyJWT & OAuth2 & bcrypt - Authentication
-- 📨 confluent-kafka-python - Kafka client
-- ✅ pydantic - Data validation
+# 🌌 Acerca del proyecto
 
-## Prerequisites 📋
+**Vehicle Rental System** es una API moderna orientada a la gestión de alquiler de vehículos utilizando arquitectura orientada a eventos y comunicación en tiempo real.
 
-Before running this project, ensure you have the following installed:
-- MongoDB 🗄️
-- Apache Kafka 📬
-- Conda (for environment management) 🐍
+El sistema fue diseñado para:
 
-## Environment Setup
+- 🚗 Gestionar vehículos
+- 👥 Administrar clientes y empleados
+- 🔐 Implementar autenticación JWT
+- 📡 Enviar actualizaciones en tiempo real
+- 📬 Procesar eventos mediante Kafka
+- 📅 Gestionar reservas de vehículos
+- ⚡ Escalar arquitecturas backend modernas
 
-1. Create a new conda environment:
+---
+
+# ✨ Características
+
+## 🚘 Gestión de vehículos
+
+- 🚗 Registro de vehículos
+- 📋 Información detallada
+- 💰 Gestión de precios
+- 📅 Disponibilidad en tiempo real
+- ⚡ Actualización de estados
+
+---
+
+## 👥 Gestión de usuarios
+
+- 🔐 Autenticación JWT
+- 👤 Roles de usuario
+- 🛡️ Control de accesos
+- 👨‍💼 Roles CUSTOMER / EMPLOYEE
+- 🔑 Seguridad con OAuth2 y bcrypt
+
+---
+
+## 📡 Tiempo real
+
+- 🔌 WebSockets
+- ⚡ Notificaciones instantáneas
+- 📬 Eventos distribuidos
+- 🚘 Actualización de reservas
+- 🔄 Sincronización automática
+
+---
+
+## 📊 Arquitectura Event-Driven
+
+- 📬 Apache Kafka
+- 📡 Publicación de eventos
+- ⚡ Procesamiento en tiempo real
+- 🔄 Integración desacoplada
+- 📈 Escalabilidad backend
+
+---
+
+# 👨‍💼 Módulos del sistema
+
+## 🚗 Vehicle Module
+
+Módulo encargado de la administración de vehículos.
+
+### Funcionalidades:
+
+- ➕ Registrar vehículos
+- 📋 Consultar información
+- 💰 Gestión de precios
+- 📅 Disponibilidad
+- 🚘 Control de estados
+
+---
+
+## 👤 Authentication Module
+
+Módulo de autenticación y seguridad.
+
+### Funcionalidades:
+
+- 🔐 JWT Authentication
+- 🛡️ OAuth2
+- 🔑 Gestión de contraseñas
+- 👥 Roles y permisos
+- ⚡ Seguridad avanzada
+
+---
+
+## 📡 Real-Time Module
+
+Módulo encargado de actualizaciones en tiempo real.
+
+### Funcionalidades:
+
+- 🔌 WebSocket Server
+- 📬 Kafka Events
+- ⚡ Eventos instantáneos
+- 🔄 Actualización automática
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+## ⚙️ Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,fastapi" />
+</p>
+
+- Python 3
+- FastAPI
+- REST API
+- Arquitectura Event-Driven
+- Uvicorn
+
+---
+
+## 🗄️ Base de datos
+
+<p>
+  <img src="https://skillicons.dev/icons?i=mongodb" />
+</p>
+
+- MongoDB
+- Persistencia NoSQL
+- Gestión de colecciones
+- Almacenamiento flexible
+
+---
+
+## 📬 Streaming y eventos
+
+<p>
+  <img src="https://skillicons.dev/icons?i=kafka" />
+</p>
+
+- Apache Kafka
+- Event Streaming
+- Comunicación distribuida
+- Procesamiento asíncrono
+
+---
+
+## 🧰 Herramientas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman" />
+</p>
+
+- Git
+- GitHub
+- Visual Studio Code
+- Swagger
+- Conda
+
+---
+
+# 📂 Estructura del proyecto
+
+```bash
+VehicleRentalSystem/
+│
+├── app/                         # Lógica principal
+├── tests/                       # Testing y WebSocket tests
+├── kafka/                       # Eventos Kafka
+├── websocket/                   # Comunicación tiempo real
+├── database/                    # Configuración MongoDB
+├── environment.yaml             # Entorno Conda
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+# ⚡ Instalación
+
+## 📋 Requisitos
+
+- Python 3+
+- MongoDB
+- Apache Kafka
+- Conda
+- Navegador moderno
+
+---
+
+# 🚀 Configuración del proyecto
+
+## 1️⃣ Clonar repositorio
+
+```bash
+git clone https://github.com/isairey/vehicle-rental-system.git
+```
+
+---
+
+## 2️⃣ Entrar al proyecto
+
+```bash
+cd vehicle-rental-system
+```
+
+---
+
+## 3️⃣ Crear entorno Conda
+
 ```bash
 conda env create -f environment.yaml
 ```
 
-2. Activate the environment:
+---
+
+## 4️⃣ Activar entorno
+
 ```bash
 conda activate vehicle-rental-system
 ```
-## MongoDB Setup 🗄️
 
-1. Ensure MongoDB is running on your system. You can verify this by:
-   - On Windows: Check if MongoDB service is running in Services
-   - On macOS/Linux: Run `ps aux | grep mongod`
+---
 
-2. Default MongoDB connection settings:
-   - Host: localhost
-   - Port: 27017
-   - No authentication required for development
+## 5️⃣ Ejecutar MongoDB
 
-3. If MongoDB is not running:
-   - Windows: Start MongoDB service
-   - macOS: `brew services start mongodb-community`
-   - Linux: `sudo systemctl start mongod`
+Verificar conexión:
 
-4. Verify connection:
-   ```bash
-   mongosh
-   ```
-   You should see the MongoDB shell prompt if connected successfully.
+```bash
+mongosh
+```
 
-## Kafka Setup 📬
+---
 
-Make sure Apache Kafka is running
+## 6️⃣ Ejecutar Kafka y Zookeeper
 
-if using macos/linux, run the following command to start kafka:
-
-Start kafka and zookeeper:
 ```bash
 brew services start kafka
 brew services start zookeeper
 ```
 
-## Running the Application 🚀
+---
 
-run the application
+## 7️⃣ Ejecutar servidor
+
 ```bash
 uvicorn app:app --reload
 ```
 
-The application will be available at: http://localhost:8000
+---
 
-## API Documentation (Swagger) 📚
+## 8️⃣ Abrir documentación Swagger
 
-This project uses Swagger for API documentation. To access the Swagger UI:
-
-Open your browser and navigate to:
+```bash
 http://localhost:8000/docs
+```
 
+---
 
-## Testing 🧪
+# 📡 Testing
 
-### WebSocket Testing 🔌
+## 🔌 WebSocket Testing
 
-There are two ways to test WebSocket functionality:
+### Cliente HTML
 
-1. Using the HTML Test Client:
-Open the HTML test client in your browser
 ```bash
 open tests/websocket_test.html
 ```
-Then type user_id and click connect, you will see the real-time updates appear in the html page
 
-2. Using python script:
-Run the python script to connect to the websocket and you will see the real-time updates in the console
+---
+
+### Cliente Python
+
 ```bash
 python tests/websocket_client.py
 ```
 
-### Apache Kafka Event Testing 📊
+---
 
-There are two ways to test the kafka events:
+## 📬 Kafka Testing
 
-1. Using the kafka-console-consumer:
-for example, to test the vehicle_events topic, run the following command:
+### Consumer Kafka
+
 ```bash
 kafka-console-consumer --bootstrap-server localhost:9092 --topic vehicle_events --from-beginning
 ```
 
-2. Using python script:
-Run the python script to consume the kafka events and you will see the events appear in the console
+---
+
+### Listener Python
+
 ```bash
 python tests/listen_event.py
 ```
 
+---
 
-## 📝 Note
+# 📊 Funcionalidades principales
 
-This project was developed as part of the AIN3005 (Advanced Python Programming) project. For detailed methodology and findings, please refer to the project report.
+## 🚘 Gestión vehicular
 
+- Registro de vehículos
+- Disponibilidad dinámica
+- Administración de reservas
+- Actualización de estados
 
+---
+
+## 🔐 Seguridad
+
+- JWT Authentication
+- OAuth2
+- Roles de usuario
+- Encriptación de contraseñas
+
+---
+
+## ⚡ Tiempo real
+
+- Notificaciones instantáneas
+- Eventos Kafka
+- WebSockets
+- Actualización automática
+
+---
+
+# 📸 Vista previa
+
+## 🖥️ Interfaces y arquitectura
+
+<div align="center">
+
+### 🚗 Gestión de vehículos
+![Vehicles](https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1200)
+
+### 📡 Arquitectura backend
+![Backend](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200)
+
+### 🔐 Seguridad y autenticación
+![Security](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200)
+
+### ⚡ Tiempo real y eventos
+![Realtime](https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200)
+
+</div>
+
+---
+
+# 🧠 Objetivos del proyecto
+
+## 🎯 Aprendizaje y arquitectura moderna
+
+- Desarrollo backend avanzado
+- Arquitectura orientada a eventos
+- APIs modernas con FastAPI
+- Integración MongoDB
+- Sistemas en tiempo real
+- Seguridad JWT
+- Comunicación distribuida
+
+---
+
+# 🚧 Roadmap
+
+## 🔮 Próximas mejoras
+
+- 📱 Aplicación móvil
+- ☁️ Deploy cloud
+- 💳 Integración de pagos
+- 🤖 IA para recomendaciones
+- 📊 Dashboard analítico
+- 🌐 Microservicios
+- 🔔 Push notifications
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas ❤️
+
+## Cómo contribuir
+
+1. Fork del proyecto
+
+```bash
+git checkout -b feature/nueva-funcionalidad
+```
+
+2. Commit
+
+```bash
+git commit -m "✨ Nueva funcionalidad"
+```
+
+3. Push
+
+```bash
+git push origin feature/nueva-funcionalidad
+```
+
+4. Pull Request 🚀
+
+---
+
+# 👨‍💻 Desarrollador
+
+<div align="center">
+
+## Isai Reyes — Full Stack Developer
+
+Desarrollador apasionado por arquitecturas modernas, FastAPI y sistemas en tiempo real 🚀
+
+</div>
+
+---
+
+# 🌟 Apoya el proyecto
+
+⭐ Dale una estrella  
+🍴 Haz fork  
+📢 Comparte el proyecto
+
+---
+
+# 📜 Licencia
+
+Proyecto open source bajo licencia MIT orientado al aprendizaje de arquitecturas backend modernas y sistemas distribuidos.
+
+---
+
+<div align="center">
+
+### 🚗 Vehicle Rental System — backend moderno y tiempo real ⚡
+
+</div>
