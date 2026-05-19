@@ -352,28 +352,6 @@ python tests/listen_event.py
 
 ---
 
-# 📸 Vista previa
-
-## 🖥️ Interfaces y arquitectura
-
-<div align="center">
-
-### 🚗 Gestión de vehículos
-![Vehicles](https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1200)
-
-### 📡 Arquitectura backend
-![Backend](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200)
-
-### 🔐 Seguridad y autenticación
-![Security](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200)
-
-### ⚡ Tiempo real y eventos
-![Realtime](https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200)
-
-</div>
-
----
-
 # 🧠 Objetivos del proyecto
 
 ## 🎯 Aprendizaje y arquitectura moderna
